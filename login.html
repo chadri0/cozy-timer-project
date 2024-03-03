@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Cozy Timer</title>
+    <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="back-to-home">
+                <h4><a href="homepage.html">Back to Home</a></h4>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome Back!</h1>
+        <form action="#" class="login-form">
+            <div class="login-field">
+                <label for="email">Email address:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="login-field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="login-btn-container">
+                <button type="button" class="login-button">Login</button>
+            </div>
+            <div class="remember-me-label">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+            </div>
+            <div class="cancel-forgot-links">
+                <button type="button" class="cancel-button">Cancel</button>
+                <span class="forgot-password"><a href="#">Forgot password?</a></span>
+            </div>
+            <div class="dnt-have-accnt-container">
+                <p>Don't have an account yet? <a href="sign-up.html">Sign up</a></p>
+                </div>
+        </form>
+    </main>
+
+</body>
+</html>
+<!-- NOTES:
+- I want all of these pages that are clicked from the homepage as "modal" pages, meaning they pop up within the homepage rather than redirecting to a new page. I think it can only be done with JavaScript so these pages might look a little funky until then
+-->
