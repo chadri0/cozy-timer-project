@@ -5,39 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Cozy Timer</title>
     <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f96873ad31.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="sign-up.html">Sign Up</a></li>
+            <ul class="navbar-list">
+                <li><a href="login.html">login</a></li>
+                <li><a href="sign-up.html">sign up</a></li>
+                <li><a href="to-do-list.html">to do list</a></li>
             </ul>
+            <i class="fa-solid fa-bars fa-lg"></i>
         </nav>
     </header>
     <section>
         <div class="pomodoro-container">
-            <h1>Timer</h1>
-            <!-- will most likely remove this h1 tag, just for organization -->
 
-            <div class="work-break-controls">
-                <p class="work">Work</p>
-                <p class="break">Break</p>
-            </div>
-
-
-            <div class="timer">
-                <p class="minutes">25</p>
-                <p>:</p>
-                <p class="seconds">00</p>
+            <div class="timer-container">
+                <h1 class="timer">25:00</h1>
+                <!-- change this to 00:00 when doing javascript -->
             </div>
 
             <div class="controls">
-                <button>Start/Pause</button>
-                <button>Restart</button>
+                <button>
+                    <i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i> start/pause
+                </button>
+                <!-- this button will become a pause button when clicked on -->
+                <button>
+                    <i class="fa-solid fa-rotate-left"></i> reset
+                </button>
                 <!--use font awesome for start/pause and restart buttons  -->
-                <a href="timer-settings.html">Settings</a>
+                <a href="settings.html"><i class="fa-solid fa-gear"></i></a>
                 <!-- add font awesome settings icon for timer settings -->
             </div>
 
@@ -45,12 +44,6 @@
 
 
     </section>
-
-    <footer>
-        <ul>
-            <li><a href="to-do-list.html">To-Do List</a></li>
-        </ul>
-    </footer>
 </body>
 </html>
 <!-- NOTES:

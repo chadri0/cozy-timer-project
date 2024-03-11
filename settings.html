@@ -5,60 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings | Cozy Timer</title>
     <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f96873ad31.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <div class="back-to-home">
-            <h4><a href="homepage.html">Back to Home</a></h4>
+            <h4><a href="index.html"><i class="fa-solid fa-arrow-left-long"></i> Back to Home</a></h4>
         </div>
     </nav>
 
     <main>
-        <div class="timersettings-container">
-            
-            <div class="pomodoro-settings">
-                <p class="pomodoro-title">Pomodoro</p>
-                <p class="minutes-settings">25 minutes</p>
-            </div>
+        <h1>Settings</h1>
+            <form class="timersettings-form">
+                
+                <div class="timer-settings">
+                    <p class="settings-title">Timer Settings</p>
+                    <label class="pomodoro-title">Pomodoro:</label>
+                    <input class="minutes-settings" type="number" name="minutes" id="minutes" placeholder="25 minutes"> 
+                    <label class="break-title">Break:</label>
+                    <input class="minutes-settings" type="number" name="break" id="break" placeholder="5 minutes">
+                </div>
 
-            <div class="break-settings">
-                <p class="break-title">Break</p>
-                <p class="break-settings">5 minutes</p>
-            </div>
+                <div class="alertsound-settings">
+                    <p class="settings-title">Alert Sounds</p>
+                    <label for="alertSelect">Select Alert Sound:</label>
+                    <select name="alert-sound">
+                        <option selected disabled>Select</option>
+                        <option value="twinkle">Twinkle</option>
+                        <!-- whimsical chimes sound -->
+                        <option value="bells">Bells</option>
+                        <!-- soft bells sound  -->
+                        <option value="soft-alarm">Soft Alarm</option>
+                        <!-- non-obnoxious alarm sound -->
+                    </select>
+                </div>
 
-            <div class="alertsound-settings">
-                <p class="alert-title">Alert Sounds</p>
-                <label for="alertSelect">Select Alert Sound:</label>
-                <select name="alert-sound">
-                    <option selected disabled>Select</option>
-                    <option value="twinkle">Twinkle</option>
-                    <!-- whimsical chimes sound -->
-                    <option value="bells">Bells</option>
-                    <!-- soft bells sound  -->
-                    <option value="soft-alarm">Soft Alarm</option>
-                    <!-- non-obnoxious alarm sound -->
-                </select>
-            </div>
+                <div class="background-settings">
+                    <p class="settings-title">Background</p>
+                    <label for="backgroundSelect">Select Background:</label>
+                    <select name="background-image">
+                        <option selected disabled>Select</option>
+                        <option value="library">Library</option>
+                        <option value="cafe">Cafe</option>
+                        <option value="new-york-skyline">New York Skyline</option>
+                        <!-- add more options later -->
+                    </select>
+                </div>
+            </form>
 
-            <div class="background-settings">
-                <p class="background-title">Background</p>
-                <label for="backgroundSelect">Select Background:</label>
-                <select name="background-image">
-                    <option selected disabled>Select</option>
-                    <option value="library">Library</option>
-                    <option value="cafe">Cafe</option>
-                    <option value="new-york-skyline">New York Skyline</option>
-                    <!-- add more options later -->
-                </select>
-            </div>
-
-            <div class="save-reset-settings">
-            <button>Reset</button>
-            <button>Save</button>
-            </div>
-
+        <div class="save-reset-settings">
+            <button class="resetsettings-button">Reset</button>
+            <button class="savesettings-button">Save</button>
         </div>
+
     </main>
 </body>
 </html>
